@@ -24,6 +24,10 @@ extension integration, native messaging host installation, and CI/CD/RO gates.
   PR ready.
 - **Issue titles use milestone/epic notation.** New planning issues follow:
   `[M#][E#][category] short description`. Milestone epics may use `[M#][E#]`.
+- **Labels and milestones are dispatch metadata.** Keep labels, milestones, and
+  issue titles aligned with
+  [docs/tsctl-label-milestone-standards.md](docs/tsctl-label-milestone-standards.md)
+  so `tsctl` and human reviewers see the same work shape.
 
 ## Quality Gate
 
@@ -36,7 +40,8 @@ make ci-local     # local parity with validate.yml
 The gate starts small while this repo is scaffold-only. As code lands, expand it
 to include shellcheck, Node tests for the extension, Rust or Go tests for native
 host components if used, package dry-runs, and smoke tests against disposable
-browser profiles.
+browser profiles. Third-party GitHub Actions must be pinned by commit SHA with a
+version comment.
 
 ## Release Operations
 
@@ -46,4 +51,3 @@ Follow the repo pattern documented in [RELEASING.md](RELEASING.md):
 - CI/CD/RO uses build, test, package, release, and rollout gates
 - signing/publish secrets come from infra-owned runtime sources, not repo files
 - release readiness requires disposable profile smoke coverage
-

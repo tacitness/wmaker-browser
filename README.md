@@ -30,8 +30,9 @@ runtime.
 - **M3: Browser fork fallback** - gated fallback only if managed upstream-based
   runtimes cannot provide required control, performance, or stability.
 
-See [SDD.md](SDD.md), [ROADMAP.md](ROADMAP.md), and
-[docs/ticket-standards.md](docs/ticket-standards.md).
+See [SDD.md](SDD.md), [ROADMAP.md](ROADMAP.md),
+[docs/ticket-standards.md](docs/ticket-standards.md), and
+[docs/tsctl-label-milestone-standards.md](docs/tsctl-label-milestone-standards.md).
 
 ## Local Gates
 
@@ -39,4 +40,3 @@ See [SDD.md](SDD.md), [ROADMAP.md](ROADMAP.md), and
 make pre-commit
 make ci-local
 ```
-

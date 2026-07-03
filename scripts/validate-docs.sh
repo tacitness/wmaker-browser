@@ -8,6 +8,7 @@ required=(
   ROADMAP.md
   RELEASING.md
   docs/ticket-standards.md
+  docs/tsctl-label-milestone-standards.md
   docs/phase-3-fallback.md
 )
 
