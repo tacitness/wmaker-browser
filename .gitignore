@@ -1,0 +1,15 @@
+.DS_Store
+dist/
+tmp/
+*.log
+
+# Never commit live browser profiles or generated runtime state.
+profiles/live/
+profiles/generated/
+*.sqlite
+cookies.sqlite
+places.sqlite
+webappsstore.sqlite
+storage/
+sessionstore*
+
